@@ -1,3 +1,16 @@
+## 4.2.1.1
+
+* added options `font_size`
+* default font_size is 16
+
+```
+line_chart(data, font_size: 20)
+pie_chart(data) # font size is 16
+```
+
+<details>
+  <summary>original until MOD begins</summary>
+
 ## 4.2.1 (2022-08-02)
 
 - Updated Chart.js to 3.9.0
@@ -334,3 +347,4 @@ Breaking changes
 ## 0.0.4 (2013-05-13)
 
 - Fix for `Uncaught ReferenceError: Chartkick is not defined` when chartkick.js is included in the `<head>`
+</details>
