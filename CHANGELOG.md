@@ -4,8 +4,8 @@
 * default font_size is 16
 
 ```
-line_chart(data, font_size: 16)
-pie_chart(data, font_size: 28)
+line_chart(data, font_size: 20)
+pie_chart(data) # font size is 16
 ```
 
 <details>
