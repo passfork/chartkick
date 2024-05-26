@@ -48,6 +48,9 @@ module Chartkick
       width = (options.delete(:width) || "100%").to_s
       defer = !!options.delete(:defer)
 
+      # default settings of chartjs
+      font_size = options.delete(:font_size) || '16'
+
       # content_for: nil must override default
       content_for = options.key?(:content_for) ? options.delete(:content_for) : Chartkick.content_for
 
@@ -119,6 +122,7 @@ module Chartkick
             if (document.documentElement.hasAttribute("data-turbolinks-preview")) return;
             if (document.documentElement.hasAttribute("data-turbo-preview")) return;
 
+            Chart.defaults.font.size = #{font_size};
             var createChart = function() { #{createjs} };
             if ("Chartkick" in window) {
               createChart();

@@ -180,6 +180,11 @@ class ChartkickTest < Minitest::Test
     assert_equal %![{"name":"s1","data":[["t1",1],["t2",2]]}]!, [{name: "s1", data: {"t1" => 1, "t2" => 2}}].chart_json
   end
 
+  def test_default_fontsize
+    assert_match 'Chart.defaults.font.size = 16;', line_chart(@data)
+    assert_match 'Chart.defaults.font.size = 20;', line_chart(@data, font_size: 20)
+  end
+
   def assert_chart(chart)
     assert_match "new Chartkick", chart
   end

@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://chartkick.com"
   spec.license       = "MIT"
 
-  spec.author        = "Andrew Kane"
+  spec.author        = "Andrew Kane; modded #{Chartkick::VERSION} by ymatsukawa"
   spec.email         = "andrew@ankane.org"
 
   spec.files         = Dir["*.{md,txt}", "{lib,licenses,vendor}/**/*"]
