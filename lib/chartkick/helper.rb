@@ -49,7 +49,7 @@ module Chartkick
       defer = !!options.delete(:defer)
 
       # default settings of chartjs
-      font_size = options.delete(:font_size) || '16'
+      font_size = (options.delete(:font_size) || '16').to_s
 
       # content_for: nil must override default
       content_for = options.key?(:content_for) ? options.delete(:content_for) : Chartkick.content_for
