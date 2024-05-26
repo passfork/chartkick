@@ -1,4 +1,4 @@
-## v4.2.1.1
+## 4.2.1.1
 
 * added options `font_size`
 * default font_size is 16
